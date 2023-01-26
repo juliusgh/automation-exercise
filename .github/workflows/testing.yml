@@ -45,7 +45,6 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: coverage_file
-          path: .coverage
       - name: Generate report using coverage
         run: coverage report
       - name: Convert coverage report to XML
